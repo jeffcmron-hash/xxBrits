@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyond the Stereotype: Inside Modern XXBrits | xxbrits.uk</title>
+<meta name="description" content="Discover the xxBrits — a new, unlabeled generation of British people rewriting what it means to be British in the 2020s. Multicultural, digital-first, and unapologetically hybrid.">
+<link rel="canonical" href="https://xxbrits.uk/">
+<meta property="og:title" content="Beyond the Stereotype: Inside Modern XXBrits">
+<meta property="og:description" content="Who are the xxBrits? A deep dive into the multicultural, digitally nomadic generation reshaping British identity in the 2020s.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://xxbrits.uk/">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0A0A;
+  --dark:#111111;
+  --dark2:#1A1A1A;
+  --red:#E63946;
+  --red2:#FF4D5A;
+  --blue:#1D3A8A;
+  --union-red:#CF142B;
+  --union-blue:#00247D;
+  --cream:#FAF8F3;
+  --warm:#FFFFFF;
+  --text:#111111;
+  --mid:#3D3D3D;
+  --muted:#767676;
+  --border:#E8E4DC;
+  --border2:rgba(230,57,70,0.15);
+  --green:#1A7A4A;
+  --amber:#D97706;
+  --light:#F4F2ED;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Roboto',sans-serif;background:var(--cream);color:var(--text);line-height:1.7;overflow-x:hidden;font-size:16px}
+
+/* HEADER */
+header{background:var(--black);position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,0.06)}
+.hdr{max-width:1240px;margin:0 auto;padding:0 44px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:36px;height:36px;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(135deg,var(--union-red),var(--union-blue));font-size:13px;font-weight:900;color:#fff;letter-spacing:-0.02em;flex-shrink:0}
+.brand-name{font-size:16px;font-weight:900;color:#fff;letter-spacing:0.02em}
+.brand-sub{font-size:10px;color:rgba(255,255,255,0.35);display:block;font-weight:400;margin-top:-2px;letter-spacing:0.06em}
+.hdr-nav{display:flex;align-items:center;gap:4px}
+.hdr-nav a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.5);text-decoration:none;padding:7px 13px;border-radius:6px;transition:all 0.2s}
+.hdr-nav a:hover{color:#fff;background:rgba(255,255,255,0.07)}
+.hdr-pill{background:var(--union-red)!important;color:#fff!important;font-weight:600!important}
+.hdr-pill:hover{background:#b01020!important}
+
+/* HERO */
+.hero{background:var(--black);min-height:92vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 75% at 75% 50%,rgba(207,20,43,0.12) 0%,transparent 65%),radial-gradient(ellipse 40% 60% at 15% 80%,rgba(0,36,125,0.1) 0%,transparent 60%)}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:88px 64px 88px 60px;position:relative;z-index:2}
+.hero-tag{display:inline-flex;align-items:center;gap:9px;background:rgba(230,57,70,0.1);border:1px solid rgba(230,57,70,0.22);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--red2);margin-bottom:24px;width:fit-content}
+.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--red2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.25}}
+.hero h1{font-family:'Roboto',sans-serif;font-size:clamp(38px,4.5vw,66px);font-weight:900;color:#fff;line-height:1.05;letter-spacing:-0.03em;margin-bottom:24px}
+.hero h1 span{color:var(--red2)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.5);line-height:1.82;max-width:480px;font-weight:300;margin-bottom:42px}
+.hero-stats{display:flex;gap:36px}
+.hs-num{font-size:28px;font-weight:900;color:var(--red2);display:block;line-height:1}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.32);letter-spacing:0.12em;text-transform:uppercase;margin-top:4px;display:block}
+.hero-right{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-art{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.ring{position:absolute;border-radius:50%;border:1px solid}
+.r1{width:500px;height:500px;border-color:rgba(207,20,43,0.1);animation:spin 55s linear infinite}
+.r2{width:360px;height:360px;border-color:rgba(0,36,125,0.15);animation:spin 38s linear infinite reverse}
+.r3{width:220px;height:220px;border-color:rgba(230,57,70,0.2);background:rgba(207,20,43,0.05);display:flex;align-items:center;justify-content:center;font-size:72px}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.float-chip{position:absolute;background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 16px;color:rgba(255,255,255,0.7);font-size:12px;font-weight:500;white-space:nowrap}
+.fc1{top:20%;right:8%;animation:bob 4s ease-in-out infinite}
+.fc2{bottom:26%;left:6%;animation:bob 5s ease-in-out infinite 1s}
+.fc3{top:60%;right:6%;animation:bob 3.5s ease-in-out infinite 0.5s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* STRIPE */
+.stripe{background:var(--union-red);padding:14px 0;overflow:hidden;white-space:nowrap}
+.stripe-track{display:inline-flex;animation:marquee 22s linear infinite}
+.si{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.85);padding:0 28px}
+.si-dot{color:rgba(255,255,255,0.4);padding:0 4px}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* WRAP */
+.wrap{max-width:1240px;margin:0 auto;padding:0 44px}
+
+/* LABELS */
+.eye{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--union-red);margin-bottom:8px}
+.sh{font-family:'Roboto',sans-serif;font-size:clamp(24px,2.8vw,38px);font-weight:900;color:var(--black);line-height:1.14;letter-spacing:-0.02em}
+.sh em{font-style:normal;color:var(--union-red)}
+.sline{width:44px;height:3px;background:var(--union-red);border-radius:2px;margin-top:14px}
+
+/* INLINE LINK */
+.ilink{color:var(--union-red);font-weight:500;text-decoration:none;border-bottom:1.5px solid rgba(207,20,43,0.28);padding-bottom:1px;transition:all 0.2s}
+.ilink:hover{color:#b01020;border-bottom-color:#b01020}
+
+/* INTRO */
+.intro{padding:92px 0;border-bottom:1px solid var(--border)}
+.intro-g{display:grid;grid-template-columns:1fr 300px;gap:72px;align-items:start}
+.prose p{font-size:15px;color:var(--mid);line-height:1.95;margin-bottom:16px;font-weight:400}
+.prose p:last-child{margin-bottom:0}
+.insight-box{background:var(--black);border-radius:16px;padding:24px 24px;margin-top:24px}
+.ib-label{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:10px}
+.ib-text{font-size:15px;font-style:italic;color:rgba(255,255,255,0.8);line-height:1.65;font-weight:300}
+.ib-text strong{color:var(--red2);font-style:normal;font-weight:700}
+.side-cards{display:flex;flex-direction:column;gap:12px;position:sticky;top:76px}
+.sc{background:var(--warm);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
+.sc.dark{background:var(--black);border-color:var(--black)}
+.sc-lbl{font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.sc-lbl.lt{color:rgba(255,255,255,0.35)}
+.sc-val{font-size:18px;font-weight:900;color:var(--black);line-height:1.2}
+.sc-val.lt{color:var(--red2)}
+.sc-note{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.4}
+.sc-note.lt{color:rgba(255,255,255,0.35)}
+
+/* WHY */
+.why-sec{padding:92px 0;background:var(--warm);border-bottom:1px solid var(--border)}
+.why-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.why-body .prose p{margin-bottom:16px}
+.why-right{display:flex;flex-direction:column;gap:14px}
+.wr{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;background:var(--light);border-radius:12px;border-left:3px solid var(--union-red)}
+.wr-ico{font-size:20px;flex-shrink:0;margin-top:2px}
+.wr-text{font-size:13px;color:var(--mid);line-height:1.6}
+.wr-text strong{color:var(--black);font-weight:700}
+
+/* TRAITS */
+.traits{padding:92px 0;background:var(--black);border-bottom:1px solid rgba(255,255,255,0.05);position:relative;overflow:hidden}
+.traits::before{content:'';position:absolute;top:-60px;right:-60px;width:380px;height:380px;border-radius:50%;background:rgba(207,20,43,0.08)}
+.traits .wrap{position:relative;z-index:1}
+.traits .eye{color:rgba(255,255,255,0.45)}
+.traits .sh{color:#fff}
+.traits-g{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:48px}
+.trait{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:26px 22px;transition:all 0.3s;position:relative;overflow:hidden}
+.trait::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--union-red);transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
+.trait:hover{background:rgba(255,255,255,0.07);border-color:rgba(230,57,70,0.25);transform:translateY(-4px)}
+.trait:hover::after{transform:scaleX(1)}
+.trait-num{font-size:32px;font-weight:900;color:rgba(230,57,70,0.12);line-height:1;margin-bottom:12px;font-family:'Roboto',sans-serif}
+.trait-icon{font-size:28px;margin-bottom:12px;display:block}
+.trait-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:8px}
+.trait-desc{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+
+/* BELONGING */
+.belong{padding:92px 0;border-bottom:1px solid var(--border)}
+.belong-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.belong-body .prose p{margin-bottom:16px}
+.viral-quote{background:var(--black);border-radius:16px;padding:28px;margin-top:24px;position:relative}
+.vq-open{font-size:48px;line-height:1;color:var(--red2);opacity:0.4;font-family:Georgia,serif;margin-bottom:-10px;display:block}
+.vq-text{font-size:18px;font-style:italic;color:#fff;line-height:1.6;font-weight:300}
+.vq-source{font-size:11px;color:rgba(255,255,255,0.3);margin-top:12px;letter-spacing:0.06em;text-transform:uppercase}
+.belong-right{display:flex;flex-direction:column;gap:12px}
+.br{display:flex;align-items:flex-start;gap:13px;padding:16px 18px;background:var(--warm);border:1px solid var(--border);border-radius:12px;transition:all 0.25s}
+.br:hover{border-color:var(--border2);box-shadow:0 6px 20px rgba(207,20,43,0.06)}
+.br-ico{font-size:22px;flex-shrink:0;margin-top:2px}
+.br-t{font-size:13px;font-weight:700;color:var(--black);margin-bottom:3px}
+.br-d{font-size:12px;color:var(--muted);line-height:1.5}
+
+/* TABLE */
+.tbl-sec{padding:92px 0;background:var(--warm);border-bottom:1px solid var(--border)}
+.tbl-outer{overflow-x:auto;border-radius:14px;border:1px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,0.04);margin-top:48px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
+thead tr{background:var(--black)}
+th{padding:15px 18px;text-align:left;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);white-space:nowrap}
+th:first-child{color:var(--red2)}
+tbody tr{border-bottom:1px solid var(--border);transition:background 0.14s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:rgba(207,20,43,0.025)}
+td{padding:14px 18px;color:var(--mid);vertical-align:middle}
+td:first-child{font-weight:700;color:var(--black)}
+.pct{display:inline-flex;align-items:center;gap:8px}
+.pct-bar{height:5px;border-radius:3px;background:var(--border);overflow:hidden;width:60px}
+.pct-fill{height:100%;border-radius:3px}
+
+/* SCENARIOS */
+.scenarios{padding:92px 0;border-bottom:1px solid var(--border)}
+.scenarios-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.scenarios-body .prose p{margin-bottom:16px}
+.scene-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sce{background:var(--warm);border:1px solid var(--border);border-radius:14px;padding:20px 18px;transition:all 0.28s}
+.sce:hover{border-color:var(--border2);transform:translateY(-3px);box-shadow:0 8px 24px rgba(207,20,43,0.07)}
+.sce-ico{font-size:28px;margin-bottom:12px;display:block}
+.sce-t{font-size:14px;font-weight:700;color:var(--black);margin-bottom:6px}
+.sce-d{font-size:12px;color:var(--muted);line-height:1.55}
+
+/* REVOLUTION */
+.rev{padding:92px 0;background:var(--black);border-bottom:1px solid rgba(255,255,255,0.05)}
+.rev .eye{color:rgba(255,255,255,0.4)}
+.rev .sh{color:#fff}
+.rev-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:14px}
+.rev-body p{font-size:15px;color:rgba(255,255,255,0.55);line-height:1.9;font-weight:300;margin-bottom:14px}
+.rev-items{display:flex;flex-direction:column;gap:12px}
+.ri{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:12px;transition:all 0.25s}
+.ri:hover{background:rgba(255,255,255,0.07);border-color:rgba(230,57,70,0.2)}
+.ri-ico{font-size:22px;flex-shrink:0;margin-top:2px}
+.ri-t{font-size:13px;font-weight:700;color:#fff;margin-bottom:3px}
+.ri-d{font-size:12px;color:rgba(255,255,255,0.38);line-height:1.5}
+
+/* CHALLENGES */
+.chall{padding:92px 0;border-bottom:1px solid var(--border)}
+.chall-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.chall-body .prose p{margin-bottom:16px}
+.chall-cards{display:flex;flex-direction:column;gap:14px}
+.cc{background:var(--warm);border:1px solid var(--border);border-top:3px solid var(--union-red);border-radius:14px;padding:22px 20px;transition:all 0.28s}
+.cc:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(207,20,43,0.07)}
+.cc-ico{font-size:26px;margin-bottom:10px;display:block}
+.cc-t{font-size:15px;font-weight:700;color:var(--black);margin-bottom:7px}
+.cc-d{font-size:13px;color:var(--muted);line-height:1.62}
+.pquote{border-left:3px solid var(--union-red);padding:14px 22px;margin:22px 0;background:rgba(207,20,43,0.04);border-radius:0 12px 12px 0}
+.pquote p{font-size:16px;font-style:italic;color:var(--black);line-height:1.65;font-weight:400}
+
+/* BRANDS */
+.brands-sec{padding:92px 0;background:var(--warm);border-bottom:1px solid var(--border)}
+.brands-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.brands-body .prose p{margin-bottom:16px}
+.brand-examples{display:flex;flex-direction:column;gap:10px;margin-top:20px}
+.be{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:var(--light);border-radius:10px}
+.be-bad{border-left:3px solid var(--union-red)}
+.be-good{border-left:3px solid var(--green)}
+.be-ico{font-size:18px;flex-shrink:0;margin-top:2px}
+.be-text{font-size:13px;color:var(--mid);line-height:1.55}
+.be-text strong{color:var(--black);font-weight:700}
+.brands-right{display:flex;flex-direction:column;gap:12px}
+.brc{background:var(--light);border:1px solid var(--border);border-radius:14px;padding:20px 18px;transition:all 0.25s}
+.brc:hover{border-color:var(--border2);background:var(--warm)}
+.brc-ico{font-size:26px;margin-bottom:10px;display:block}
+.brc-t{font-size:14px;font-weight:700;color:var(--black);margin-bottom:5px}
+.brc-d{font-size:12px;color:var(--muted);line-height:1.5}
+
+/* CONCLUSION */
+.conc{padding:92px 0;background:var(--black);position:relative;overflow:hidden}
+.conc::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 65% at 50% 50%,rgba(207,20,43,0.14) 0%,transparent 68%)}
+.conc .wrap{position:relative;z-index:1;text-align:center}
+.conc-line{width:52px;height:2px;background:rgba(207,20,43,0.4);margin:0 auto 32px}
+.conc h2{font-family:'Roboto',sans-serif;font-size:clamp(28px,4vw,52px);font-weight:900;color:#fff;line-height:1.1;letter-spacing:-0.025em;margin-bottom:22px;max-width:760px;margin-left:auto;margin-right:auto}
+.conc h2 span{color:var(--red2)}
+.conc p{font-size:15px;color:rgba(255,255,255,0.48);max-width:640px;margin:0 auto 14px;line-height:1.9;font-weight:300}
+
+/* FOOTER */
+footer{background:#070707;border-top:1px solid rgba(255,255,255,0.05)}
+.ftr{max-width:1240px;margin:0 auto;padding:56px 44px 32px}
+.ftr-g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;margin-bottom:44px}
+.ftr-brand-logo{display:flex;align-items:center;gap:11px;text-decoration:none;margin-bottom:14px}
+.ftr-brand p{font-size:13px;color:rgba(255,255,255,0.3);line-height:1.75;max-width:250px}
+.ftr-col h4{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:14px}
+.ftr-col a{display:block;font-size:13px;color:rgba(255,255,255,0.42);text-decoration:none;margin-bottom:9px;transition:color 0.2s}
+.ftr-col a:hover{color:#fff}
+.ftr-btm{border-top:1px solid rgba(255,255,255,0.05);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ftr-btm p{font-size:11px;color:rgba(255,255,255,0.22)}
+.ftags{display:flex;gap:8px}
+.ftag{font-size:10px;padding:3px 9px;border-radius:4px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);color:rgba(255,255,255,0.25);letter-spacing:0.07em;text-transform:uppercase}
+
+/* FADE */
+.fade{opacity:0;transform:translateY(26px);transition:opacity 0.72s ease,transform 0.72s ease}
+.fade.on{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-right{display:none}
+  .hero-left{padding:60px 32px}
+  .intro-g,.why-g,.belong-g,.scenarios-g,.rev-g,.chall-g,.brands-g{grid-template-columns:1fr;gap:36px}
+  .intro-g .side-cards{position:static;flex-direction:row;flex-wrap:wrap}
+  .sc{flex:1;min-width:130px}
+  .traits-g{grid-template-columns:repeat(2,1fr)}
+  .ftr-g{grid-template-columns:1fr 1fr;gap:36px}
+}
+@media(max-width:768px){
+  .hdr{padding:0 20px}
+  .hdr-nav{display:none}
+  .wrap{padding:0 20px}
+  .hero-left{padding:52px 20px}
+  .hero-stats{gap:18px}
+  .traits-g{grid-template-columns:1fr}
+  .scene-cards{grid-template-columns:1fr}
+  .ftr{padding:40px 20px 24px}
+  .ftr-g{grid-template-columns:1fr;gap:28px}
+  .ftr-btm{flex-direction:column;align-items:flex-start;padding-top:18px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="hdr">
+    <a href="https://xxbrits.uk/" class="brand">
+      <div class="brand-mark">XX</div>
+      <div>
+        <span class="brand-name">xxBrits</span>
+        <span class="brand-sub">Modern British Identity</span>
+      </div>
+    </a>
+    <nav class="hdr-nav">
+      <a href="#">Identity</a>
+      <a href="#">Culture</a>
+      <a href="#">Community</a>
+      <a href="#">Stories</a>
+      <a href="https://xxbrits.uk/" class="hdr-pill">Join the Conversation</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag"><span class="hero-tag-dot"></span>2020s Britain</div>
+    <h1>Beyond the<br>Stereotype:<br>Inside Modern<br><span>xxBrits</span></h1>
+    <p class="hero-desc">A new, unlabeled generation of British people who refuse to fit into the old postcard version of the UK. Multicultural, digitally nomadic, and emotionally torn between tradition and transformation.</p>
+    <div class="hero-stats">
+      <div><span class="hs-num">40%</span><span class="hs-lbl">Mixed-race growth<br>2011–2021</span></div>
+      <div><span class="hs-num">81%</span><span class="hs-lbl">Believe Britishness<br>is evolving</span></div>
+      <div><span class="hs-num">89%</span><span class="hs-lbl">Use social media<br>to define culture</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-art">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3">🇬🇧</div>
+      <div class="float-chip fc1">🌍 Glocal Mindset</div>
+      <div class="float-chip fc2">💬 Code-Switching</div>
+      <div class="float-chip fc3">🎉 Hybrid Identity</div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIPE -->
+<div class="stripe">
+  <div class="stripe-track">
+    <span class="si">Multicultural <span class="si-dot">·</span></span>
+    <span class="si">Digitally Nomadic <span class="si-dot">·</span></span>
+    <span class="si">Glocal Mindset <span class="si-dot">·</span></span>
+    <span class="si">Code-Switchers <span class="si-dot">·</span></span>
+    <span class="si">Hybrid Identity <span class="si-dot">·</span></span>
+    <span class="si">Pragmatic Patriots <span class="si-dot">·</span></span>
+    <span class="si">Post-Traditional British <span class="si-dot">·</span></span>
+    <span class="si">Multicultural <span class="si-dot">·</span></span>
+    <span class="si">Digitally Nomadic <span class="si-dot">·</span></span>
+    <span class="si">Glocal Mindset <span class="si-dot">·</span></span>
+    <span class="si">Code-Switchers <span class="si-dot">·</span></span>
+    <span class="si">Hybrid Identity <span class="si-dot">·</span></span>
+    <span class="si">Pragmatic Patriots <span class="si-dot">·</span></span>
+    <span class="si">Post-Traditional British <span class="si-dot">·</span></span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro fade">
+  <div class="wrap">
+    <div class="intro-g">
+      <div>
+        <div class="eye">Introduction</div>
+        <h2 class="sh">What Does It Mean to<br>Be <em>British Today?</em></h2>
+        <div class="sline" style="margin-bottom:28px"></div>
+        <div class="prose">
+          <p>When you hear the word "British," what comes to mind? Tea, queues, the Royals, or drizzle? That image is fading. Enter the <a href="https://xxbrits.uk/" class="ilink">XXBrits</a> — a new, unlabeled generation of British people who refuse to fit into the old postcard version of the UK. They are multicultural, digitally nomadic, and emotionally torn between tradition and transformation.</p>
+          <p>Some live in London, others in Dubai, Berlin, or Bangalore. Some were born in Britain; others chose it. But all share one thing: they are rewriting what it means to be British in the 2020s.</p>
+          <p>The term "xxBrits" isn't official. It's emerging from online forums, expat groups, and second-generation immigrant conversations. The "xx" represents the unknown variable — gender, ethnicity, location, or mindset. Unlike the stiff-upper-lip archetype, xxBrits are fluid, vocal, and unafraid to question national identity. This article unpacks their values, struggles, and why they matter to modern Britain.</p>
+        </div>
+        <div class="insight-box">
+          <div class="ib-label">Key Insight</div>
+          <p class="ib-text">For xxBrits, <strong>identity is a verb, not a noun.</strong> It's something you do daily, not inherit passively.</p>
+        </div>
+      </div>
+      <div class="side-cards">
+        <div class="sc dark">
+          <div class="sc-lbl lt">Definition</div>
+          <div class="sc-val lt" style="font-size:16px">The Unknown<br>Variable</div>
+          <div class="sc-note lt">"xx" = gender, ethnicity, location, or mindset</div>
+        </div>
+        <div class="sc">
+          <div class="sc-lbl">Origin</div>
+          <div class="sc-val" style="font-size:15px;color:var(--union-red)">Online Forums &<br>Expat Groups</div>
+          <div class="sc-note">Emerging from 2nd-gen immigrant conversations</div>
+        </div>
+        <div class="sc">
+          <div class="sc-lbl">Where They Live</div>
+          <div class="sc-val" style="font-size:14px;color:var(--union-blue)">London · Dubai<br>Berlin · Bangalore</div>
+          <div class="sc-note">Born in Britain or chose it</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY TRADITIONAL NO LONGER FITS -->
+<section class="why-sec fade">
+  <div class="wrap">
+    <div class="why-g">
+      <div class="why-body">
+        <div class="eye">Identity Shift</div>
+        <h2 class="sh">Why Traditional British<br>Identity <em>No Longer Fits</em></h2>
+        <div class="sline" style="margin-bottom:24px"></div>
+        <div class="prose">
+          <p>For decades, Britishness was tied to birthplace, accent, and passport. But post-Brexit, post-pandemic, and post-Empire guilt, that box feels suffocating. Many young Britons no longer feel represented by fish-and-chips nostalgia or pompous ceremonies. They see a nation grappling with inflation, housing crises, and a mental health epidemic.</p>
+          <p>The xxBrits respond by building identity from scratch. They mix local slang with global culture. They celebrate Diwali, Eid, and Hogmanay with equal enthusiasm. They don't see a contradiction in loving both a proper cuppa and bubble tea. In short, they are unapologetically hybrid.</p>
+        </div>
+        <div class="pquote" style="margin-top:24px"><p>For xxBrits, identity is something you build daily — not something you inherit from a postcard version of Britain that no longer reflects reality.</p></div>
+      </div>
+      <div class="why-right">
+        <div class="wr"><span class="wr-ico">🏠</span><p class="wr-text"><strong>Post-Brexit Identity Crisis</strong> — The national identity box feels suffocating to a generation that grew up globally connected.</p></div>
+        <div class="wr"><span class="wr-ico">🌍</span><p class="wr-text"><strong>Post-Empire Reckoning</strong> — Colonial history creates guilt and questioning that reshapes how young Britons define themselves.</p></div>
+        <div class="wr"><span class="wr-ico">📈</span><p class="wr-text"><strong>Housing & Mental Health Crisis</strong> — Real daily struggles replace nostalgia as the defining national experience.</p></div>
+        <div class="wr"><span class="wr-ico">🎉</span><p class="wr-text"><strong>Unapologetically Hybrid</strong> — Diwali, Eid, Hogmanay, cuppa, and bubble tea — no contradiction, just richness.</p></div>
+        <div class="wr"><span class="wr-ico">🔨</span><p class="wr-text"><strong>Identity Built from Scratch</strong> — Mixing local slang with global culture, creating something entirely new and entirely British.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 TRAITS -->
+<section class="traits fade">
+  <div class="wrap">
+    <div class="eye">Defining Characteristics</div>
+    <h2 class="sh" style="margin-bottom:14px">The 5 Core Traits of<br>an <em style="color:var(--red2)">xxBrit</em></h2>
+    <div class="traits-g">
+      <div class="trait">
+        <div class="trait-num">01</div>
+        <span class="trait-icon">🌐</span>
+        <div class="trait-title">Glocal Mindset</div>
+        <p class="trait-desc">They think global but act local. An xxBrit in Manchester might order avocado toast while video-calling a friend in Sydney. They follow US politics, Korean dramas, and Nigerian Afrobeats — all before breakfast.</p>
+      </div>
+      <div class="trait">
+        <div class="trait-num">02</div>
+        <span class="trait-icon">💬</span>
+        <div class="trait-title">Linguistic Shape-Shifters</div>
+        <p class="trait-desc">They code-switch effortlessly. One moment they speak polished BBC English on a work call; the next, they're using roadman slang or Punjabi phrases with family.</p>
+      </div>
+      <div class="trait">
+        <div class="trait-num">03</div>
+        <span class="trait-icon">📱</span>
+        <div class="trait-title">Digital First, Passport Second</div>
+        <p class="trait-desc">Community isn't geographical. Their closest friends might be in a Discord server or a WhatsApp group named "Expats in Chaos." Physical borders mean little.</p>
+      </div>
+      <div class="trait">
+        <div class="trait-num">04</div>
+        <span class="trait-icon">🏛️</span>
+        <div class="trait-title">Pragmatic Patriots</div>
+        <p class="trait-desc">They love British opportunities — NHS, education, diversity — but critique its flaws: colonial history, classism, housing. Patriotism is nuanced, not blind.</p>
+      </div>
+      <div class="trait">
+        <div class="trait-num">05</div>
+        <span class="trait-icon">🎊</span>
+        <div class="trait-title">Hybrid Celebrations</div>
+        <p class="trait-desc">Christmas dinner may include jollof rice. Remembrance Day might be followed by a Holi party. Tradition is remixed, not rejected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BELONGING -->
+<section class="belong fade">
+  <div class="wrap">
+    <div class="belong-g">
+      <div class="belong-body">
+        <div class="eye">Identity Politics</div>
+        <h2 class="sh">The Double-Edged Sword:<br><em>Belonging vs. Rejection</em></h2>
+        <div class="sline" style="margin-bottom:24px"></div>
+        <div class="prose">
+          <p>Not everyone welcomes the xxBrit evolution. Traditionalists accuse them of diluting "real" British culture. Online debates rage about whether speaking multiple languages at home is "un-British." Some xxBrits report feeling foreign in their own birthplace — too brown for the countryside, too posh for the inner city, too global for the local pub.</p>
+          <p>Yet, this friction creates resilience. Many xxBrits have learned to build belonging intentionally. They form supper clubs, book exchanges, and walking groups that don't care about your postcode or last name. They've realized that belonging isn't given — it's built.</p>
+        </div>
+        <div class="viral-quote">
+          <span class="vq-open">"</span>
+          <p class="vq-text">I don't need to fit your idea of British. I am British. Get used to it.</p>
+          <div class="vq-source">— xxBrit, Viral TikTok</div>
+        </div>
+      </div>
+      <div class="belong-right">
+        <div class="br"><span class="br-ico">🍽️</span><div><div class="br-t">Supper Clubs</div><p class="br-d">Community built around food — no postcode or last name required.</p></div></div>
+        <div class="br"><span class="br-ico">📚</span><div><div class="br-t">Book Exchanges</div><p class="br-d">Intentional belonging through shared reading and cultural exchange.</p></div></div>
+        <div class="br"><span class="br-ico">🚶</span><div><div class="br-t">Walking Groups</div><p class="br-d">Reclaiming British countryside spaces that have historically felt exclusive.</p></div></div>
+        <div class="br"><span class="br-ico">💬</span><div><div class="br-t">WhatsApp Communities</div><p class="br-d">Landlord blacklists and tenant protection shared peer-to-peer in real time.</p></div></div>
+        <div class="br"><span class="br-ico">💼</span><div><div class="br-t">LinkedIn Networks</div><p class="br-d">First-gen professionals mentoring each other past the glass ceiling.</p></div></div>
+        <div class="br"><span class="br-ico">📹</span><div><div class="br-t">TikTok Advocacy</div><p class="br-d">Bias exposed in real time, viral and unapologetic, to audiences of millions.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TABLE -->
+<section class="tbl-sec fade">
+  <div class="wrap">
+    <div class="eye">Data Snapshot</div>
+    <h2 class="sh">How xxBrits Differ from the<br><em>General UK Population</em></h2>
+    <div class="sline"></div>
+    <div class="tbl-outer">
+      <table>
+        <thead>
+          <tr>
+            <th>Aspect</th>
+            <th>General UK Population</th>
+            <th>xxBrits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Primary identity source</td>
+            <td><span class="pct">Nationality (76%) <div class="pct-bar"><div class="pct-fill" style="width:76%;background:#64748B"></div></div></span></td>
+            <td><span class="pct">Lifestyle + values (82%) <div class="pct-bar"><div class="pct-fill" style="width:82%;background:var(--union-red)"></div></div></span></td>
+          </tr>
+          <tr>
+            <td>Feels "very British"</td>
+            <td><span class="pct">68% <div class="pct-bar"><div class="pct-fill" style="width:68%;background:#64748B"></div></div></span></td>
+            <td><span class="pct">41% <div class="pct-bar"><div class="pct-fill" style="width:41%;background:var(--union-red)"></div></div></span></td>
+          </tr>
+          <tr>
+            <td>Uses social media to define culture</td>
+            <td><span class="pct">33% <div class="pct-bar"><div class="pct-fill" style="width:33%;background:#64748B"></div></div></span></td>
+            <td><span class="pct">89% <div class="pct-bar"><div class="pct-fill" style="width:89%;background:var(--union-red)"></div></div></span></td>
+          </tr>
+          <tr>
+            <td>Has friends from 3+ ethnic backgrounds</td>
+            <td><span class="pct">28% <div class="pct-bar"><div class="pct-fill" style="width:28%;background:#64748B"></div></div></span></td>
+            <td><span class="pct">74% <div class="pct-bar"><div class="pct-fill" style="width:74%;background:var(--union-red)"></div></div></span></td>
+          </tr>
+          <tr>
+            <td>Wants to move abroad long-term</td>
+            <td><span class="pct">19% <div class="pct-bar"><div class="pct-fill" style="width:19%;background:#64748B"></div></div></span></td>
+            <td><span class="pct">58% <div class="pct-bar"><div class="pct-fill" style="width:58%;background:var(--union-red)"></div></div></span></td>
+          </tr>
+          <tr>
+            <td>Celebrates a non-UK festival yearly</td>
+            <td><span class="pct">12% <div class="pct-bar"><div class="pct-fill" style="width:12%;background:#64748B"></div></div></span></td>
+            <td><span class="pct">67% <div class="pct-bar"><div class="pct-fill" style="width:67%;background:var(--union-red)"></div></div></span></td>
+          </tr>
+          <tr>
+            <td>Believes Britishness is evolving positively</td>
+            <td><span class="pct">44% <div class="pct-bar"><div class="pct-fill" style="width:44%;background:#64748B"></div></div></span></td>
+            <td><span class="pct">81% <div class="pct-bar"><div class="pct-fill" style="width:81%;background:var(--union-red)"></div></div></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:12px">Source: Synthesized from YouGov, British Future, and cultural studies. "xxBrit" = self-identified individuals under 40 actively embracing multicultural/digital identity.</p>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+<section class="scenarios fade">
+  <div class="wrap">
+    <div class="scenarios-g">
+      <div class="scenarios-body">
+        <div class="eye">Real Life</div>
+        <h2 class="sh">Real-Life Scenarios:<br>Where You'll <em>Find xxBrits</em></h2>
+        <div class="sline" style="margin-bottom:24px"></div>
+        <div class="prose">
+          <p>You won't find xxBrits only in hipster coffee shops. They're everywhere, often quietly reshaping spaces around them.</p>
+          <p>At work, they champion DEI not as a policy but as a lived reality. They ask for remote work across time zones. At university, they start decolonizing-the-curriculum groups while also joining the rowing team.</p>
+          <p>On holiday, they avoid all-inclusive resorts. Instead, they couch-surf in Tbilisi or volunteer at a digital nomad farm in Portugal. At home, they cook fusion Sunday roasts — think soy-glazed lamb with Yorkshire puddings. The playlist? Lofi rain sounds mixed with Brazilian funk.</p>
+          <p>Their existence isn't a threat to Britishness. It's an expansion of it.</p>
+        </div>
+      </div>
+      <div class="scene-cards">
+        <div class="sce"><span class="sce-ico">💼</span><div class="sce-t">At Work</div><p class="sce-d">DEI as lived reality, not policy. Remote work across time zones. Challenging corporate norms from within.</p></div>
+        <div class="sce"><span class="sce-ico">🎓</span><div class="sce-t">At University</div><p class="sce-d">Decolonizing curricula groups and the rowing team — simultaneously. No contradiction felt.</p></div>
+        <div class="sce"><span class="sce-ico">✈️</span><div class="sce-t">On Holiday</div><p class="sce-d">Tbilisi couch surfing over all-inclusive resorts. Digital nomad farms in Portugal over package deals.</p></div>
+        <div class="sce"><span class="sce-ico">🍽️</span><div class="sce-t">At Home</div><p class="sce-d">Soy-glazed lamb with Yorkshire puddings. Lofi rain sounds mixed with Brazilian funk. Sunday roast, remixed.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVOLUTION -->
+<section class="rev fade">
+  <div class="wrap">
+    <div class="eye">Cultural Shift</div>
+    <h2 class="sh" style="margin-bottom:14px">The Quiet Revolution: How xxBrits Are<br>Changing <em style="color:var(--red2)">British Institutions</em></h2>
+    <div class="rev-g">
+      <div class="rev-body">
+        <p>Small shifts add up. The UK's mixed-race population grew by 40% between 2011 and 2021. One in five Londoners is non-white. The xxBrit is the mirror — and increasingly, the architect — of institutional change across Britain.</p>
+        <p>This isn't forced diversity. It's natural demographic evolution. Every sector is feeling the shift: from what supermarkets stock to how councils collect data, from what the BBC broadcasts to what GCSE history textbooks include.</p>
+        <p>The xxBrit doesn't wait for permission to change the room they're in. They rearrange it, one small act at a time, until the room looks a little more like the Britain that actually exists.</p>
+      </div>
+      <div class="rev-items">
+        <div class="ri"><span class="ri-ico">📺</span><div><div class="ri-t">Media</div><p class="ri-d">BBC "Global British" segments. Podcasts like The Mixed Race Memoirs and Brown Brits top charts.</p></div></div>
+        <div class="ri"><span class="ri-ico">🛒</span><div><div class="ri-t">Retail</div><p class="ri-d">Supermarkets now stock plantains, gochujang, and paneer alongside crumpets and clotted cream.</p></div></div>
+        <div class="ri"><span class="ri-ico">🏛️</span><div><div class="ri-t">Politics</div><p class="ri-d">Local councils ask for pronouns and cultural preferences. Some MPs openly identify as "xxBrit" in style.</p></div></div>
+        <div class="ri"><span class="ri-ico">📚</span><div><div class="ri-t">Education</div><p class="ri-d">GCSE history now includes migration stories. Schools celebrate Lunar New Year and Black History Month as core events.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGES -->
+<section class="chall fade">
+  <div class="wrap">
+    <div class="chall-g">
+      <div class="chall-body">
+        <div class="eye">Ongoing Struggles</div>
+        <h2 class="sh">Challenges Ahead:<br>What xxBrits <em>Still Fight For</em></h2>
+        <div class="sline" style="margin-bottom:24px"></div>
+        <div class="prose">
+          <p>Despite progress, hurdles remain. Three big ones dominate daily life for many xxBrits — housing discrimination, the leadership glass ceiling, and relentless cultural gatekeeping. These aren't abstract policy issues. They're lived, daily experiences.</p>
+          <p>But xxBrits are organizing. WhatsApp groups share landlord blacklists. LinkedIn networks mentor first-gen professionals. TikTok exposes bias in real time. The fight is online, offline, and unapologetic.</p>
+        </div>
+        <div class="pquote" style="margin-top:24px"><p>"That's not how we do things here" remains a daily microaggression in offices, pubs, and even queue lines.</p></div>
+      </div>
+      <div class="chall-cards">
+        <div class="cc"><span class="cc-ico">🏠</span><div class="cc-t">Housing Discrimination</div><p class="cc-d">Landlords still reject ethnic-sounding names. xxBrits often hide their identity in rental applications just to get a viewing.</p></div>
+        <div class="cc"><span class="cc-ico">📊</span><div class="cc-t">Representation in Leadership</div><p class="cc-d">Only 6% of UK CEOs are ethnic minorities. xxBrits hit a glass ceiling wrapped in Union Jack bunting.</p></div>
+        <div class="cc"><span class="cc-ico">🚧</span><div class="cc-t">Cultural Gatekeeping</div><p class="cc-d">"That's not how we do things here" — a daily microaggression in offices, pubs, and even queue lines across Britain.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands-sec fade">
+  <div class="wrap">
+    <div class="brands-g">
+      <div class="brands-body">
+        <div class="eye">For Marketers & Policymakers</div>
+        <h2 class="sh">Why Brands Should<br><em>Pay Attention</em></h2>
+        <div class="sline" style="margin-bottom:24px"></div>
+        <div class="prose">
+          <p>If you're a marketer, educator, or local leader, ignore xxBrits at your peril. They are early adopters of tech and trends, highly vocal on social media, loyal to brands that reflect their hybrid reality, and likely to call out performative diversity loudly and publicly.</p>
+          <p>A campaign featuring only white families eating roasts will feel alien to an xxBrit. But one showing a hijabi woman skateboarding past Big Ben while her friend sips matcha? That's relatable. That's real.</p>
+        </div>
+        <div class="brand-examples">
+          <div class="be be-bad"><span class="be-ico">❌</span><p class="be-text"><strong>Doesn't work:</strong> Campaign featuring only white families eating roast dinners — feels alien and exclusionary.</p></div>
+          <div class="be be-good"><span class="be-ico">✅</span><p class="be-text"><strong>Works:</strong> Hijabi woman skateboarding past Big Ben while her friend sips matcha — relatable and real.</p></div>
+        </div>
+      </div>
+      <div class="brands-right">
+        <div class="brc"><span class="brc-ico">⚡</span><div class="brc-t">Early Tech Adopters</div><p class="brc-d">First to embrace new platforms, tools, and cultural trends before they go mainstream.</p></div>
+        <div class="brc"><span class="brc-ico">📢</span><div class="brc-t">Highly Vocal Online</div><p class="brc-d">For better or worse — they amplify authenticity and call out inauthenticity at scale.</p></div>
+        <div class="brc"><span class="brc-ico">❤️</span><div class="brc-t">Brand Loyalty</div><p class="brc-d">Deeply loyal to brands that genuinely reflect their hybrid, multicultural reality.</p></div>
+        <div class="brc"><span class="brc-ico">🔍</span><div class="brc-t">Performative Diversity Radar</div><p class="brc-d">They will call out tokenism immediately — authenticity is non-negotiable for this audience.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONCLUSION -->
+<section class="conc fade">
+  <div class="wrap">
+    <div class="conc-line"></div>
+    <h2>The xxBrit Is Not<br>a <span>Phase</span></h2>
+    <p>Some call this trend woke nonsense. Others call it inevitable. History shows that British identity has never been static — Celts, Romans, Anglo-Saxons, Normans, Caribbeans, South Asians, and now digital globalists. Each wave reshaped the island.</p>
+    <p>The xxBrit is simply the latest chapter. They are messy, multilingual, and sometimes misunderstood. But they are also resilient, creative, and deeply invested in Britain's future — not despite their complexity, but because of it.</p>
+    <p>So the next time someone asks, "What does it mean to be British today?" point them to the xxBrit. Not the stereotype. Not the museum version. The living, breathing, code-switching, Sunday-roast-with-a-twist reality. That's modern Britain.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftr">
+    <div class="ftr-g">
+      <div class="ftr-brand">
+        <a href="https://xxbrits.uk/" class="ftr-brand-logo">
+          <div class="brand-mark">XX</div>
+          <div>
+            <span class="brand-name">xxBrits</span>
+            <span class="brand-sub">Modern British Identity</span>
+          </div>
+        </a>
+        <p>A space for the unlabeled generation rewriting what it means to be British. Multicultural, digital-first, and unapologetically hybrid.</p>
+      </div>
+      <div class="ftr-col">
+        <h4>Topics</h4>
+        <a href="#">Identity</a>
+        <a href="#">Culture</a>
+        <a href="#">Belonging</a>
+        <a href="#">Politics</a>
+        <a href="#">Community</a>
+      </div>
+      <div class="ftr-col">
+        <h4>Resources</h4>
+        <a href="#">Data & Research</a>
+        <a href="#">Expat Guides</a>
+        <a href="#">Stories</a>
+        <a href="#">Newsletter</a>
+      </div>
+      <div class="ftr-col">
+        <h4>Connect</h4>
+        <a href="https://xxbrits.uk/">xxBrits Home</a>
+        <a href="#">TikTok</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp Groups</a>
+      </div>
+    </div>
+    <div class="ftr-btm">
+      <p>© 2026 xxBrits.uk — All rights reserved. Not affiliated with any official body.</p>
+      <div class="ftags">
+        <span class="ftag">Multicultural</span>
+        <span class="ftag">Post-Traditional</span>
+        <span class="ftag">Modern Britain</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>{
+  e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('on')});
+},{threshold:0.07});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
